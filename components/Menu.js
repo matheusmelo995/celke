@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { RiSyringeLine } from 'react-icons/ri';
 import {
   Collapse,
   Navbar,
@@ -23,7 +24,7 @@ const Menu = (props) => {
         <div>
       <Navbar color="dark" dark expand="md">
           <Container>
-        <NavbarBrand href="/">Vacina</NavbarBrand>
+        <NavbarBrand href="/"><RiSyringeLine/> Vacina</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
@@ -48,7 +49,7 @@ const Menu = (props) => {
                   Dados Cadastrais
                 </DropdownItem>
                 <DropdownItem>
-                Notificações
+                  Notificações
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
