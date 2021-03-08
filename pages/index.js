@@ -1,7 +1,8 @@
-import Menu from '../components/Menu'
-import { FaSyringe } from 'react-icons/fa'
-import { FaCalendarAlt } from 'react-icons/fa'
-import { FaMapMarkedAlt } from 'react-icons/fa'
+import Menu from '../components/Menu';
+import Rodape from '../components/Rodape';
+import { FaSyringe } from 'react-icons/fa';
+import { FaCalendarAlt } from 'react-icons/fa';
+import { FaMapMarkedAlt } from 'react-icons/fa';
 import { Jumbotron, Button, Container } from 'reactstrap';
 
 function Home() {
@@ -11,8 +12,9 @@ function Home() {
             <Jumbotron fluid className="descr-top">
                 <style>
                     {`.descr-top{
-                        background-color: #17c3c7;
-                        color: #343a40;
+                        background-color: #0310ffa8;
+                        color: #fff;
+                        margin-bottom: 0rem !important;
                     }`}
                 </style>
                 <Container className="text-center">
@@ -20,7 +22,7 @@ function Home() {
                 <br></br>
                 <h3>Gerenciamento inteligente de Vacinas.</h3>
                 <p className="lead">
-                    <a href='/orcamento' className="btn btn-outline-dark btn-lg mt-4">Orçamento</a>
+                    <a href='/orcamento' className="btn btn-outline-light btn-lg mt-4">Orçamento</a>
                 </p>
                 </Container>
             </Jumbotron>
@@ -33,9 +35,9 @@ function Home() {
                     }.circulo{
                         width: 140px;
                         height: 140px;
-                        background-color: #17c3c7a8;
+                        background-color: #0310ffa8;
                         font-size: 52px;
-                        color: #343a40;
+                        color: #fff;
                         padding-top: 20px;
                     }.centralizar{
                         margin: 0 auto !important;
@@ -78,6 +80,7 @@ function Home() {
                     </div>
                 </Container>
             </Jumbotron>
+            <Rodape/>
         </div>
     )
 }

@@ -22,7 +22,12 @@ const Menu = (props) => {
 
     return (
         <div>
-      <Navbar color="dark" dark expand="md">
+          <style>
+            {`.menu-custom{
+              background-color: #343a40db;
+            }`}
+          </style>
+      <Navbar className="menu-custom" dark expand="md">
           <Container>
         <NavbarBrand href="/"><RiSyringeLine/> Vacina</NavbarBrand>
         <NavbarToggler onClick={toggle} />
