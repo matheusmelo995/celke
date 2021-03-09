@@ -1,13 +1,16 @@
+import React from 'react';
+import Head from 'next/head';
 import Menu from '../components/Menu';
 import Rodape from '../components/Rodape';
-import { FaSyringe } from 'react-icons/fa';
-import { FaCalendarAlt } from 'react-icons/fa';
-import { FaMapMarkedAlt } from 'react-icons/fa';
+import { FaSyringe, FaCalendarAlt, FaMapMarkedAlt } from 'react-icons/fa';
 import { Jumbotron, Button, Container } from 'reactstrap';
 
 function Home() {
     return (
         <div>
+            <Head>
+                <title>Home - Vacina</title>
+            </Head>
             <Menu />
             <Jumbotron fluid className="descr-top">
                 <style>
