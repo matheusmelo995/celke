@@ -1,5 +1,6 @@
+import React from 'react';
 import Menu from '../components/Menu';
-
+import Head from 'next/head';
 import Rodape from '../components/Rodape';
 
 import {Container, Jumbotron, Button, Form, FormGroup, Label, Input} from 'reactstrap';
@@ -7,6 +8,10 @@ import {Container, Jumbotron, Button, Form, FormGroup, Label, Input} from 'react
 function Orcamento() {
     return (
         <div>
+            <Head>
+                <title>Orçamento - Vacina</title>
+                <meta name="description" content="Site para orçamentos na área das vacinas." />
+            </Head>
             <Menu />
 
             <Jumbotron fluid className="descr-top">
